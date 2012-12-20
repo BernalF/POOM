@@ -8,17 +8,17 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        <!--<div style="width: 45%; float:right">
-                            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
-                                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
-                            </video>
-                        </div>
-                
-                        <div style="width: 45%; float: left;">
-                            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
-                                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
-                            </video>
-                 </div>-->
+        <div style="width: 45%; float:right">
+            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
+                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+            </video>
+        </div>
+
+        <div style="width: 45%; float: left;">
+            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
+                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+            </video>
+        </div>
 
 
         <script src="js/jquery-1.8.3.js"></script>
@@ -30,10 +30,6 @@
     
     
     $(function(){
-        
-       $('.carousel').carousel()
-    
-        
         
         $('video').mediaelementplayer({
             //Shows debug errors on screen
