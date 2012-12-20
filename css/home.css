@@ -1,0 +1,27 @@
+.MainVideo{
+    display: block;
+    height: 100%;
+    position: relative;
+
+    height: 240px;
+    left: 0;
+    margin-top: 0;
+    width: 320px;
+    
+    border: solid red;
+
+}
+
+.tumbsVideo{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    
+    height: 234px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 304px;
+    
+    border: solid blue;
+}

@@ -2,44 +2,39 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>POOM</title>
-
-        <script src="js/jquery-1.8.3.js"></script>
-        <script src="js/mediaelement-and-player.js"></script>
-        <link rel="stylesheet" href="css/mediaelementplayer.css" />		
+        <link rel="stylesheet" href="css/mediaelementplayer.css" />	
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <body>
-        <!--        <div style="width: 45%; float:right">
-                    <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
-                        <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
-                    </video>
-                </div>
-        
-                <div style="width: 45%; float: left;">
-                    <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
-                        <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
-                    </video>
-                </div>-->
-        <div>
-            Video Principal  
-        </div>
+        <!--<div style="width: 45%; float:right">
+                            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
+                                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+                            </video>
+                        </div>
+                
+                        <div style="width: 45%; float: left;">
+                            <video width="640" height="360" style="width: 100%; height: 100%;" id="player1">
+                                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+                            </video>
+                 </div>-->
 
-        <ul>
-            <li>
-                min1
-            </li>
-            <li>
-                min2
-            </li>
-            <li>
-                min3
-            </li>
-        </ul>
+
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/mediaelement-and-player.js"></script>
     </body>
 </html>
 <script type="text/javascript">    
     
+    
     $(function(){
+        
+       $('.carousel').carousel()
+    
+        
+        
         $('video').mediaelementplayer({
             //Shows debug errors on screen
             enablePluginDebug: false,
