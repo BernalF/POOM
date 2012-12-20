@@ -107,57 +107,130 @@ a.close{
     display:none;
 }
 
-a.btn,
-a.button,
-input.btn,
-input.button,
-.button,
-.btn{
-    text-align:center;
-    line-height:24px;
-    font-family:Verdana, Geneva, sans-serif;
-    font-size:12px;
-    color:#FFF;
-    background-image:url(../images/defaults/navigation_right2.png);
-    background-repeat:no-repeat;
-    background-position:right;
-    padding:0 29px 0 5px;
-}
-
-.btn{
-    display:inline-block;
-}
-
-.button{
-    display:block;
-}
-
-.button:hover{
-    background-color:#666;
-}
-
-.imgLink{
-    display:inline-block;
-}
-
-.bg:hover,
-a:hover .bg,
-.button:hover,
-.btn:hover,
-.imgLink:hover,
-.close{
-    background-color:#999;
-    color:#fff;
-}
-
 img {
     vertical-align:bottom;
 }
 /* GLOBAL CLASSES ENDS */
 
-#Main{
-    height:100%;
-    min-width:900px;
-    background:none;
-    margin: 0 auto;
+/* MAIN CONTAINER STARTS */
+
+#MainContainer{}
+
+/* MAIN CONTAINER ENDS */
+
+/* GENERAL STRUCTURE STARTS */
+
+h1, h1 a{
+	font-size:40px;
+	color:#fff;
 }
+h1{
+	float:left;
+}
+
+#Top{
+	background:#069;
+	padding:10px 0 0 20px;
+	overflow:hidden;
+}
+
+.userInfo{
+	float:right;
+	padding:10px 20px 20px 0;
+	overflow:hidden;
+}
+
+.userInfo .userImage{
+	float:left;
+	background:#9C0;
+	width:50px;
+	height:50px;
+}
+
+.userInfo .userName{
+	float:left;
+	padding:0 10px 0 0;
+}
+
+.userInfo .userName p{
+	display:block;
+	padding:0 0 0 0;
+	color:#fff;
+}
+
+.userInfo .userName a{
+	color:#fff;
+}
+
+.userInfo .userName a:hover{
+	color:#0CF;
+}
+
+.globalNav{
+	background:#39C;
+	overflow:hidden;
+	padding:0 0 0 20px;
+}
+
+.globalNav li{
+	float:left;
+	line-height:30px;
+	
+}
+.globalNav li a{
+	display:block;
+	background:#09F;
+	color:#FFF;
+	padding:0 20px 0 20px;
+}
+
+.globalNav li a:hover{
+	background:#373737;
+	color:#fff;
+}
+
+
+.centerHolder{
+	overflow:hidden;
+	width:900px;
+	margin:0 auto;
+	background:#693;
+}
+
+.footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background:#373737;
+}
+
+.footer p{
+	color:#fff;
+}
+
+/* GENERAL STRUCTURE ENDS */
+#Main{
+	padding-top:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

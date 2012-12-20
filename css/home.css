@@ -1,3 +1,5 @@
+
+/* VIDEOS LIST STARTS 
 #sections {
     height:234px;
     width:304px;
@@ -94,3 +96,61 @@
     overflow-y:scroll;
     width:304px;
 }
+
+/* VIDEOS LIST ENDS */
+
+
+
+
+/***************************************** CALEB'S EDIT ****************************************************/
+
+/* VIDEO PLAYER STARTS */
+.videoPlayer{
+	height:auto; 
+	position:relative;
+	vertical-align:top;
+	width:700px;
+	float:left;
+}
+
+.wistia_bento_section{
+	width:210px;
+	float:left;
+	margin-left:10px;
+	background:#960;
+	max-height:270px;
+	overflow:auto;
+}
+
+.wistia_bento_section li{
+	overflow:hidden;
+	background:#373737;
+}
+
+.wistia_bento_section li:hover{
+	background:#666;
+}
+
+.wistia_bento_section li:hover a, .wistia_bento_section li a:hover{
+	color:#CCC;
+}
+
+.wistia_bento_section li a{
+	color:#39C;
+	display:block;
+	padding-top:5px;
+}
+
+.wistia_bento_section li span{
+	padding-left:10px;
+	display:block;
+	text-align:center;
+}
+
+.wistia_bento_section li img{
+	width:150px;
+	margin:0 0 0 20px;
+	border:1px solid #000;
+}
+
+/* VIDEO PLAYER ENDS */
