@@ -9,106 +9,132 @@
         <title>POOM</title>
     </head>
     <body>
-    <div id="MainContainer">
-        <header id="Top">
-            <h1 class="logo30"><a class="transition" href="#">POOM</a></h1>
-            
-            <ul class="userInfo">
-            	<li class="userName">
-                	<p>Hello Caleb</p>
-                    <p><a href="#">Option 1</a> <a href="#">Option 2</a></p>
-                </li>
-            	<li class="userImage"></li>
-            </ul>
-            
-        </header>
-        
-        <nav>
-            <ul class="globalNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-        </nav>
-        
-        <section id="Main"> 
-                   
-            <div class="centerHolder">      
-                <video class="videoPlayer" id="player1">
-                    <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
-                </video>
-                    
-                <ul class="wistia_bento_section" id="section_0_container">
-                    <li class="selected">
-                        <a href="#" class="wistia_bento_item" id="item_0_0">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">Pepsi.wmv</span>
-                        </a>
+        <div id="MainContainer">
+            <header id="Top">
+                <h1 class="logo30"><a class="transition" href="#">POOM</a></h1>            
+                <ul class="userInfo">
+                    <li class="userName">
+                        <p>Hello User</p>
+                        <p><a href="#">Option 1</a> <a href="#">Option 2</a></p>
                     </li>
-                    <li>
-                        <a href="#" class="wistia_bento_item" id="item_0_1">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">rs_g105.wmv</span>
-                        </a>
-                    </li>
-                    <li class="selected">
-                        <a href="#" class="wistia_bento_item" id="item_0_0">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">Pepsi.wmv</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="wistia_bento_item" id="item_0_1">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">rs_g105.wmv</span>
-                        </a>
-                    </li>
-                    <li class="selected">
-                        <a href="#" class="wistia_bento_item" id="item_0_0">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">Pepsi.wmv</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="wistia_bento_item" id="item_0_1">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">rs_g105.wmv</span>
-                        </a>
-                    </li>
-                    <li class="selected">
-                        <a href="#" class="wistia_bento_item" id="item_0_0">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">Pepsi.wmv</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="wistia_bento_item" id="item_0_1">
-                            <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60" class="wistia_bento_item_thumb">
-                            <span class="wistia_bento_item_name">rs_g105.wmv</span>
-                        </a>
-                    </li>
-                </ul>  
-            </div>
-            
-        </section>
-        
-</div>
+                    <li class="userImage"></li>
+                </ul>            
+            </header>
 
-<footer class="footer">
-    <p class="textCenter">POOM is a new way of Marketing, All Rights Reserved</p>
-</footer>
-        
-</body>
-    
+            <nav>
+                <ul class="globalNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+
+            <section id="Main">                    
+                <div class="centerHolder">      
+                    <video class="videoPlayer" id="player1">
+                        <!--Youtube Source -->
+                        <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+                        <!--MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                        <source type="video/mp4" src="media/echo-hereweare.mp4" />
+                        <!--WebM/VP8 for Firefox4, Opera, and Chrome -->
+                        <source type="video/webm" src="media/echo-hereweare.webm" />
+                        <!--Ogg/Vorbis for older Firefox and Opera versions -->
+                        <source type="video/ogg" src="media/echo-hereweare.ogv" />                
+                        <!--Flash fallback for non-HTML5 browsers without JavaScript -->
+                        <object type="application/x-shockwave-flash" data="flxpplugin/flashmediaelement.swf">
+                            <param name="movie" value="flxpplugin/flashmediaelement.swf" />
+                            <param name="flashvars" value="controls=true&file=media/myvideo.mp4" />
+                            <!--Image as a last resort -->
+                            <img src="img/glyphicons-halflings-white.png" alt="No video playback capabilities" width="320" height="240" title="No video playback capabilities" />
+                        </object>
+                    </video>                    
+                    <ul class="videos_section">
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/fb28388058455bc5e2aec1122f56f47fc5dea1ae.jpg?&amp;image_crop_resized=100x60">
+                                <span>Pepsi.wmv</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <span>rs_g105.wmv</span>
+                            </a>
+                        </li>
+                    </ul>  
+                </div>            
+            </section>        
+        </div>
+        <footer class="footer">
+            <p class="textCenter">POOM is a new way of Marketing, All Rights Reserved</p>
+        </footer>        
+    </body>    
 </html>
 <script src="js/jquery-1.8.3.js"></script>
 <script src="js/mediaelement-and-player.js"></script>
 <script type="text/javascript">    
-    
-    
-    $(function(){
-        
+    $(function(){        
         $('video').mediaelementplayer({
             //Shows debug errors on screen
             enablePluginDebug: false,
@@ -153,6 +179,5 @@
                 alert(e);
             }
         });    
-    });
-    
+    });    
 </script>

@@ -1,156 +1,50 @@
-
-/* VIDEOS LIST STARTS 
-#sections {
-    height:234px;
-    width:304px;
-}
-
-#grid_right_inside{
-    height:100%;
-    right:0;
-    position:absolute;
-    top:0;
-}
-#grid_right{
-    height:100%;
-    left:0;
-    position:absolute;
-    top:0;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    border-radius: 4px;
-    background-color: rgba(115,115,115,0.72);
-    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.15);   
-}
-#sections ul {
-    background:#ffffff;
-    display:block;
-    list-style-type:none;
-    margin:0;
-    padding:0;
-}
-#sections li {
-    border-bottom:1px solid #d9d9d9;
-    font-size:14px;
-    line-height:1.2em;
-    margin:0;
-}
-#sections li:hover {
-    background:#d9d9d9;
-}
-#sections li.selected {
-    background:#404040;
-}
-#sections a {
-    color:#555;
-    display:block;
-    font-size:14px;
-    padding:12px;
-}
-#sections a:hover {
-    color:#000;
-}
-#sections li.selected a {
-    color:#ffffff;
-}
-#sections li img {
-    border:0;
-    display:inline-block;
-    vertical-align:top;
-}
-#sections .wistia_bento_item_name {
-    display:inline-block;
-    display:inline;
-    font-size:14px;
-    line-height:1.2em;
-    padding-left:12px;
-    text-decoration:none;
-    vertical-align:top;
-    width:148px;
-    zoom:1;
-}
-#sections .open {
-    display:block;
-}
-#sections .closed {
-    display:none;
-}
-#grid_main{
-    display:block;
-    height:100%;
-    position:relative;
-    width: 320px; 
-    left: 0px; 
-    height: 240px; 
-    margin-top: 0px;
-}
-#grid_center{
-    height:100%;
-    position:relative;
-    width:100%;
-    background-color: rgb(1, 1, 1);
-}
-.container_wrapper {
-    height:234px;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    width:304px;
-}
-
-/* VIDEOS LIST ENDS */
-
-
-
-
-/***************************************** CALEB'S EDIT ****************************************************/
-
 /* VIDEO PLAYER STARTS */
 .videoPlayer{
-	height:auto; 
-	position:relative;
-	vertical-align:top;
-	width:700px;
-	float:left;
+    height:auto; 
+    position:relative;
+    vertical-align:top;
+/*    width:700px;*/
+    float:left;
 }
 
-.wistia_bento_section{
-	width:210px;
-	float:left;
-	margin-left:10px;
-	background:#960;
-	max-height:270px;
-	overflow:auto;
+.videos_section{
+    width:210px;
+    float:left;
+    margin-left:10px;
+    background:#960;
+    max-height:270px;
+    overflow:auto;
 }
 
-.wistia_bento_section li{
-	overflow:hidden;
-	background:#373737;
+.videos_section li{
+    overflow:hidden;
+    background:#373737;
 }
 
-.wistia_bento_section li:hover{
-	background:#666;
+.videos_section li:hover{
+    background:#666;
 }
 
-.wistia_bento_section li:hover a, .wistia_bento_section li a:hover{
-	color:#CCC;
+.videos_section li:hover a, .videos_section li a:hover{
+    color:#CCC;
 }
 
-.wistia_bento_section li a{
-	color:#39C;
-	display:block;
-	padding-top:5px;
+.videos_section li a{
+    color:#39C;
+    display:block;
+    padding-top:5px;
 }
 
-.wistia_bento_section li span{
-	padding-left:10px;
-	display:block;
-	text-align:center;
+.videos_section li span{
+    padding-left:10px;
+    display:block;
+    text-align:center;
 }
 
-.wistia_bento_section li img{
-	width:150px;
-	margin:0 0 0 20px;
-	border:1px solid #000;
+.videos_section li img{
+    width:150px;
+    margin:0 0 0 20px;
+    border:1px solid #000;
 }
 
 /* VIDEO PLAYER ENDS */
