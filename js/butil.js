@@ -1,3 +1,31 @@
+/*
+Author: Bernal Fernandez Rojas
+Description: String Builder implementation in Javacript
+*/
+//Initializes a new instance of the StringBuilder class
+// and appends the given value if supplied
+function StringBuilder(value) {
+    this.strings = [];
+    this.append(value);
+}
+//Appends the given value to the end of this instance.
+StringBuilder.prototype.append = function(value) {
+    if(value) {
+        this.strings.push(value);
+    }
+}
+//Clears the string buffer
+StringBuilder.prototype.clear = function() {
+    this.strings.length = 1;
+}
+//Converts this instance to a String.
+StringBuilder.prototype.toString = function() {
+    return this.strings.join("");
+}
+/*
+ Author: Bernal Fernandez Rojas
+ Description: Generic Function to play media on the browser
+ */
 (function ($) {    
     var defaults = {
         evtNamespace: '',
@@ -50,8 +78,7 @@
         loadstart: undefined,
         play: undefined,
         pause: undefined,
-        ended: undefined        
-       
+        ended: undefined             
     }        
     $.fn.extend({
         bmedia: function(options){
@@ -112,7 +139,6 @@
         }
     });                      
 })(jQuery);
-
 
 /*
  * jYoutube 1.0 - YouTube video image getter plugin for jQuery
