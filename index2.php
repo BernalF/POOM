@@ -10,12 +10,14 @@
     <body>
         <div style="width: 45%; float:right">
             <video width="320" height="240" poster="poster.jpg" controls="controls" preload="none">
+                <!--Youtube Source-->
+                <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
                 <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
-                <source type="video/mp4" src="media/echo-hereweare.mp4" />
+                <source type="video/mp4" src="media/video/echo-hereweare.mp4" />
                 <!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
-                <source type="video/webm" src="media/echo-hereweare.webm" />
+                <source type="video/webm" src="media/video/echo-hereweare.webm" />
                 <!-- Ogg/Vorbis for older Firefox and Opera versions -->
-                <source type="video/ogg" src="media/myvideo.ogv" />
+                <source type="video/ogg" src="media/video/echo-hereweare.ogv" />
 
                 <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
                 <object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.swf">

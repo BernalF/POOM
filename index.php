@@ -30,25 +30,25 @@
             </nav>
             <section id="Main">                    
                 <div class="centerHolder">      
-                    <video class="videoPlayer" id="player1">
-                        <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+                    <video class="videoPlayer" id="player1">                        
+                        <source type="video/webm" src="media/video/echo-hereweare.webm" />                                                
                     </video>                    
                     <ul class="videos_section">
-                        <li>
+                        <li class="current" source="[{src:'media/video/echo-hereweare.mp4', type:'video/mp4'}, {src:'media/video/echo-hereweare.webm', type:'video/webm'}]">                            
                             <a href="#">
-                                <img alt="video1" src="http://resources0.news.com.au/images/2012/09/18/1226476/365984-gangnam-style.jpg">
+                                <img alt="video1" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>gangnam-style</span>
                             </a>
                         </li>
-                        <li>
+                        <li source="[{src:'media/video/echo-hereweare.ogv', type:'video/ogg'}]">
                             <a href="#" >
-                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <img alt="video2" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>rs_g105.wmv</span>
                             </a>
                         </li>      
-                        <li>
+                        <li source="[{src:'http://www.youtube.com/watch?v=nOEw9iiopwI', type:'video/youtube'}]">
                             <a href="#" >
-                                <img alt="" src="http://embed-0.wistia.com/deliveries/77bd981a4f4c48e8a56200e16ade473c23a4627d.jpg?&amp;image_crop_resized=100x60">
+                                <img alt="video3" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>rs_g105.wmv</span>
                             </a>
                         </li>
@@ -67,9 +67,48 @@
 <script type="text/javascript">    
     $(function(){
         $('#player1').bmedia({           
-            ended: function(){
-                alert("make the popud");
+            ended: function(e){
+                PlayNext(e.target);
             }
+        });        
+        
+        /*
+         * Author: Bernal Fernandez Rojas         
+         * Description: Videos Section List click handler
+         * Creation Date: December, 2012         
+         */
+        $('.videos_section li').off('click.videos_section').on('click.videos_section', function() {
+            $(this).addClass('current').siblings().removeClass('current');
+            var audio_src = $(this).attr('source');
+            $('video#player1:first').each(function(){
+                this.player.pause();
+                this.player.setSrc(audio_src);
+                this.player.play();
+            });
         });
+        
+        /*
+         * Author: Bernal Fernandez Rojas         
+         * Description: Auto Play next in videos Section
+         * Creation Date: December, 2012         
+         */        
+        function PlayNext(currentPlayer) {
+            if ($('.videos_section li.current').length > 0){ //Get the current song
+                var current_item = $('.videos_section li.current:first'); //:first is added if we have more than once .current
+                var audio_src = $(current_item).next().attr('source');
+                $(current_item).next().addClass('current').siblings().removeClass('current');                
+            }else{ //If there is no .current
+                var current_item = $('.videos_section li:first'); //Get :first if we don't have .current
+                var audio_src = $(current_item).next().attr('source');
+                $(current_item).next().addClass('current').siblings().removeClass('current');                
+            }
+            //If it is the last - Stop playing
+            if( $(current_item).is(':last-child') ) { 
+                $(current_item).removeClass('current');
+            }else{
+                currentPlayer.setSrc(audio_src);
+                currentPlayer.play();
+            }
+        }            
     });    
 </script>

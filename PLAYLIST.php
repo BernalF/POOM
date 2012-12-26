@@ -69,7 +69,9 @@
 
     <body>
 
-        <audio id="mejs" src="media/audio/audio-01.mp3" type="audio/mp3" controls="controls"></audio>
+        <audio id="mejs" controls="controls">
+             <source type="audio/mp3" src="media/audio/audio-01.mp3" />                        
+        </audio>
         <ul class="mejs-list">
             <li class="current">media/audio/audio-01.mp3</li>
             <li>media/audio/audio-02.mp3</li>

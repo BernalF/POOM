@@ -3,7 +3,7 @@
     height:auto; 
     position:relative;
     vertical-align:top;
-/*    width:700px;*/
+    /*    width:700px;*/
     float:left;
 }
 
@@ -23,6 +23,11 @@
 
 .videos_section li:hover{
     background:#666;
+}
+
+.videos_section li.current, .videos_section li.current a{
+    background:#666;
+    color:#CCC;
 }
 
 .videos_section li:hover a, .videos_section li a:hover{
