@@ -286,3 +286,12 @@ StringBuilder.prototype.clear = function() {
 StringBuilder.prototype.toString = function() {
     return this.strings.join('');
 }
+
+function getSource(mediaSource){
+    var aSource = mediaSource.split('|');  
+    srcObj = [];
+    $.each(aSource, function(key, val){
+        srcObj.push($.parseJSON(val));
+    });    
+    return srcObj;
+}

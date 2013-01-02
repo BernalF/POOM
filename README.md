@@ -4,8 +4,9 @@
 
 ------Tasks to Do to get the first version
 
-1) toObject function: 2 minutes on Google!
-    Example: (string) "[{key: 'val1'}, {key: 'val2'}]" ==> (object) {key: val1, key: val2}
+0.1) Update the version of media elemente library 
+
+1) Add Postroll event to bmedia function
 
 2) Thumbs Implementation.
 

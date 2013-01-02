@@ -34,19 +34,19 @@
                         <source type="video/webm" src="media/video/echo-hereweare.webm" />                                                
                     </video>                    
                     <ul class="videos_section">
-                        <li class="current" source="[{src:'media/video/echo-hereweare.mp4', type:'video/mp4'}, {src:'media/video/echo-hereweare.webm', type:'video/webm'}]">                            
+                        <li class="current" source='{"src":"media/video/echo-hereweare.mp4", "type":"video/mp4"}|{"src":"media/video/echo-hereweare.webm", "type":"video/webm"}'> 
                             <a href="#">
                                 <img alt="video1" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>gangnam-style</span>
                             </a>
                         </li>
-                        <li source="[{src:'media/video/echo-hereweare.ogv', type:'video/ogg'}]">
+                        <li source='{"src":"media/video/echo-hereweare.ogv", "type":"video/ogg"}'>
                             <a href="#" >
                                 <img alt="video2" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>rs_g105.wmv</span>
                             </a>
                         </li>      
-                        <li source="[{src:'http://www.youtube.com/watch?v=nOEw9iiopwI', type:'video/youtube'}]">
+                        <li source='{"src":"http://www.youtube.com/watch?v=nOEw9iiopwI", "type":"video/youtube"}'>
                             <a href="#" >
                                 <img alt="video3" src="media/video/thumbs/echo-hereweare.jpg" >
                                 <span>rs_g105.wmv</span>
@@ -65,11 +65,11 @@
 <script src="js/mediaelement-and-player.js"></script>
 <script src="js/butil.js"></script>
 <script type="text/javascript">    
-    $(function(){
+    $(function(){        
         $('#player1').bmedia({           
             ended: function(e){
                 PlayNext(e.target);
-            }
+            }           
         });        
         
         /*
@@ -79,10 +79,10 @@
          */
         $('.videos_section li').off('click.videos_section').on('click.videos_section', function() {
             $(this).addClass('current').siblings().removeClass('current');
-            var audio_src = $(this).attr('source');
+            var media_src = $(this).attr('source');
             $('video#player1:first').each(function(){
                 this.player.pause();
-                this.player.setSrc(audio_src);
+                this.player.setSrc(getSource(media_src));
                 this.player.play();
             });
         });
@@ -93,20 +93,21 @@
          * Creation Date: December, 2012         
          */        
         function PlayNext(currentPlayer) {
+            var media_src="";
             if ($('.videos_section li.current').length > 0){ //Get the current song
                 var current_item = $('.videos_section li.current:first'); //:first is added if we have more than once .current
-                var audio_src = $(current_item).next().attr('source');
+                media_src = $(current_item).next().attr('source');
                 $(current_item).next().addClass('current').siblings().removeClass('current');                
             }else{ //If there is no .current
                 var current_item = $('.videos_section li:first'); //Get :first if we don't have .current
-                var audio_src = $(current_item).next().attr('source');
+                media_src = $(current_item).next().attr('source');
                 $(current_item).next().addClass('current').siblings().removeClass('current');                
             }
             //If it is the last - Stop playing
             if( $(current_item).is(':last-child') ) { 
                 $(current_item).removeClass('current');
             }else{
-                currentPlayer.setSrc(audio_src);
+                currentPlayer.setSrc(getSource(media_source));
                 currentPlayer.play();
             }
         }            
