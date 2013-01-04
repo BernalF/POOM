@@ -125,7 +125,7 @@ function defaultErrorCallback (jqXHR, textStatus){
         //Enables Flash and Silverlight to resize to content size
         autosize: true,
         //The order of controls you want on the control bar (and other plugins below)
-        controlsBar: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
+        controlsBar: ['playpause','progress','current','duration','tracks','volume','fullscreen', 'postroll'],
         //Remove or reorder to change plugin priority
         pluginsPriority: ['flash','silverlight'],
         //Hide controls when playing and mouse is not over the video

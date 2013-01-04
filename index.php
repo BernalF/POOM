@@ -30,7 +30,7 @@
             </nav>
             <section id="Main">                    
                 <div class="centerHolder">      
-                    <video class="videoPlayer" id="player1">                        
+                    <video class="videoPlayer" id="player1" preload="none">                        
                         <source type="video/webm" src="media/video/echo-hereweare.webm" />                                                
                     </video>                    
                     <ul class="videos_section">
@@ -81,8 +81,9 @@
             $(this).addClass('current').siblings().removeClass('current');
             var media_src = $(this).attr('source');
             $('video#player1:first').each(function(){
-                this.player.pause();
-                this.player.setSrc(getSource(media_src));
+                this.player.pause();                
+                this.player.setSrc(getSource(media_src)); 
+                this.player.load();
                 this.player.play();
             });
         });
@@ -108,6 +109,7 @@
                 $(current_item).removeClass('current');
             }else{
                 currentPlayer.setSrc(getSource(media_source));
+                currentPlayer.load();
                 currentPlayer.play();
             }
         }            

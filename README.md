@@ -4,7 +4,7 @@
 
 ------Tasks to Do to get the first version
 
-0.1) Update the version of media elemente library 
+0.1) detect the media that i using, and then destroy y create a new one! this are just only for youtube videos! 
 
 1) Add Postroll event to bmedia function
 
