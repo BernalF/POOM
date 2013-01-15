@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/defaults.css" />	
         <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/jquery.fancybox.css" />
         <link rel="stylesheet" href="css/mediaelementplayer.css" />
         <title>POOM</title>
     </head>
@@ -46,32 +47,52 @@
                                 <span>rs_g105.wmv</span>
                             </a>
                         </li>      
-                        <li source='{"src":"http://www.youtube.com/watch?v=nOEw9iiopwI", "type":"video/youtube"}'>
-                            <a href="#" >
-                                <img alt="video3" src="media/video/thumbs/echo-hereweare.jpg" >
-                                <span>rs_g105.wmv</span>
+                        <li class="current" source='{"src":"media/video/echo-hereweare.mp4", "type":"video/mp4"}|{"src":"media/video/echo-hereweare.webm", "type":"video/webm"}|{"src":"media/video/echo-hereweare.ogv", "type":"video/ogg"}'> 
+                            <a href="#">
+                                <img alt="video1" src="media/video/thumbs/echo-hereweare.jpg" >
+                                <span>gangnam-style</span>
                             </a>
                         </li>
+                        <!--                        <li source='{"src":"http://www.youtube.com/watch?v=nOEw9iiopwI", "type":"video/youtube"}'>
+                                                    <a href="#" >
+                                                        <img alt="video3" src="media/video/thumbs/echo-hereweare.jpg" >
+                                                        <span>rs_g105.wmv</span>
+                                                    </a>
+                                                </li>-->
                     </ul>  
                 </div>            
             </section>        
         </div>
+
+        <div class="hide">
+            <div id="promoInfo">
+                asdasdas
+                asd
+                asd
+                asd                
+            </div>
+        </div>
+        <div>
+            <a  id="hiddenclickerMsg" href="#promoInfo" >Hidden Clicker</a>
+        </div>        
         <footer class="footer">
             <p class="textCenter">POOM is a new way of Marketing, All Rights Reserved</p>
         </footer>        
     </body>    
 </html>
 <script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery.fancybox.js"></script>
 <script src="js/mediaelement-and-player.js"></script>
 <script src="js/butil.js"></script>
 <script type="text/javascript">    
     $(function(){        
         $('#player1').bmedia({           
-            ended: function(e){
+            ended: function(e){                
                 PlayNext(e.target);
             }           
-        });        
-        
+        });     
+        $("a#hiddenclickerMsg").fancybox();
+         
         /*
          * Author: Bernal Fernandez Rojas         
          * Description: Videos Section List click handler
@@ -94,7 +115,7 @@
          * Creation Date: December, 2012         
          */        
         function PlayNext(currentPlayer) {
-            var media_src="";
+            var media_src= '';
             if ($('.videos_section li.current').length > 0){ //Get the current song
                 var current_item = $('.videos_section li.current:first'); //:first is added if we have more than once .current
                 media_src = $(current_item).next().attr('source');

@@ -114,6 +114,19 @@ function defaultErrorCallback (jqXHR, textStatus){
  *
  * Creation Date: December, 2012
  * 
+ * Types of Source:
+ * Youtube Source = type="video/youtube"
+ * Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 = type="video/mp4"
+ * Firefox 4, Opera, and Chrome = type="video/webm"
+ * Older Firefox and Opera versions = type="video/ogg"
+ * Flash fallback for non-HTML5 browsers without JavaScript = <object type="application/x-shockwave-flash" data="flashmediaelement.swf">
+                                                                    <param name="movie" value="flxpplugin/flashmediaelement.swf" />
+                                                                    <param name="flashvars" value="controls=true&file=myvideo.mp4" />
+                                                                    <!-- Image as a last resort -->
+                                                                    <img src="myvideo.jpg" width="320" height="240" title="No video playback capabilities" />
+                                                                </object>
+ * 
+ * 
  */
 (function ($) {    
     var defaults = {

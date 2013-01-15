@@ -20,11 +20,11 @@
                 <source type="video/ogg" src="media/video/echo-hereweare.ogv" />
 
                 <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
-                <object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.swf">
-                    <param name="movie" value="flxpplugin/flashmediaelement.swf" />
-                    <param name="flashvars" value="controls=true&file=myvideo.mp4" />
+                <object width="320" height="240" type="application/x-shockwave-flash" data="fxplugin/flashmediaelement.swf">
+                    <param name="movie" value="fxplugin/flashmediaelement.swf" />
+                    <param name="flashvars" value="controls=true&file=media/video/echo-hereweare.mp4" />
                     <!-- Image as a last resort -->
-                    <img src="myvideo.jpg" width="320" height="240" title="No video playback capabilities" />
+                    <img src="loading.gif" width="320" height="240" title="No video playback capabilities" />
                 </object>
             </video>
         </div>
