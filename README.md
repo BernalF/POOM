@@ -22,4 +22,6 @@
 
 
 ***CONCERN
-Compatibility with IE8 and Safari =S
+
+- Compatibility with IE8 and Safari =S
+
