@@ -23,5 +23,4 @@
 
 ***CONCERN
 
-- Compatibility with IE8 and Safari =S
-
+- Compatibility with IE8 and Safari =S, an idea can be adding a <object with the source> maybe works
