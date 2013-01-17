@@ -16,3 +16,7 @@
         - Fields with the Name and Email to Submit and win a promo code
 
 2) Once to the information its submitted, show the Promo Code
+
+
+***CONCERN
+Compatibility with IE8 and Safari =S
